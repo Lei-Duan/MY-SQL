@@ -1,4 +1,4 @@
-MySQL Command Line Interface
+MySQL
 ===============
 
 Related tutorial: http://cd64.de/mysql-cli
