@@ -35,4 +35,14 @@ Selecting records: `SELECT * FROM [name-of-table];`
 
 Selecting parts of records: `SELECT [name-of-column], [name-of-another-column] FROM [name-of-table];`
 
+Counting records: `SELECT COUNT([name-of-column]) FROM [name-of-table];`
+
+Counting and selecting grouped records: `SELECT *, (SELECT COUNT([name-of-column]) FROM [name-of-table]) AS count FROM [name-of-table] GROUP BY [name-of-column];`
+
+Selecting specific records: `SELECT * FROM [name-of-table] WHERE [name-of-column] = [custom-input];` (Selectors: `<`, `>`, `!=`)
+
+Searching records for a word: `SELECT * FROM [name-of-table] WHERE [name-of-column] LIKE '%[custom-input]%';`
+
+Searching records for a word starting with [custom-input]: `SELECT * FROM [name-of-table] WHERE [name-of-column] LIKE '[custom-input]%';`
+
 Logout: `exit`
