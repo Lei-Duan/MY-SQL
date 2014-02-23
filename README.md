@@ -11,38 +11,50 @@ Access monitor: `mysql -u [username] -p` (will prompt for password)
 
 Show all databases: `show databases;`
 
-Access database: `mysql -u [username] -p [name-of-database]` (will prompt for password)
+Access database: `mysql -u [username] -p [database]` (will prompt for password)
 
-Create new database: `create database [name-of-database];`
+Create new database: `create database [database];`
 
-Select database: `use [name-of-database];`
+Select database: `use [database];`
 
 Show all tables: `show tables;`
 
-Show table structure: `describe [name-of-table];`
+Show table structure: `describe [table];`
 
-Create new table with columns: `CREATE TABLE [name-of-table] ([name-of-column] VARCHAR(120), [name-of-another-column] DATETIME);`
+Create new table with columns: `CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME);`
 
-Adding a column: `ALTER TABLE [name-of-table] ADD COLUMN [name-of-column] VARCHAR(120);`
+Adding a column: `ALTER TABLE [table] ADD COLUMN [column] VARCHAR(120);`
 
-Adding a column with an unique, auto-incrementing ID: `ALTER TABLE [name-of-table] ADD COLUMN [name-of-column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;`
+Adding a column with an unique, auto-incrementing ID: `ALTER TABLE [table] ADD COLUMN [column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;`
 
-Inserting a record: `INSERT INTO [name-of-table] ([name-of-column], [name-of-column]) VALUES ('[custom-input]', [custom-input]');`
+Inserting a record: `INSERT INTO [table] ([column], [column]) VALUES ('[value]', [value]');`
 
 MySQL function for datetime input: `NOW()`
 
-Selecting records: `SELECT * FROM [name-of-table];`
+Selecting records: `SELECT * FROM [table];`
 
-Selecting parts of records: `SELECT [name-of-column], [name-of-another-column] FROM [name-of-table];`
+Selecting parts of records: `SELECT [column], [another-column] FROM [table];`
 
-Counting records: `SELECT COUNT([name-of-column]) FROM [name-of-table];`
+Counting records: `SELECT COUNT([column]) FROM [table];`
 
-Counting and selecting grouped records: `SELECT *, (SELECT COUNT([name-of-column]) FROM [name-of-table]) AS count FROM [name-of-table] GROUP BY [name-of-column];`
+Counting and selecting grouped records: `SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`
 
-Selecting specific records: `SELECT * FROM [name-of-table] WHERE [name-of-column] = [custom-input];` (Selectors: `<`, `>`, `!=`)
+Selecting specific records: `SELECT * FROM [table] WHERE [column] = [value];` (Selectors: `<`, `>`, `!=`)
 
-Searching records for a word: `SELECT * FROM [name-of-table] WHERE [name-of-column] LIKE '%[custom-input]%';`
+Searching records for a word: `SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`
 
-Searching records for a word starting with [custom-input]: `SELECT * FROM [name-of-table] WHERE [name-of-column] LIKE '[custom-input]%';`
+Searching records for a word starting with [value]: `SELECT * FROM [table] WHERE [column] LIKE '[value]%';`
+
+Updating records: `UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`
+
+Deleting records: `DELETE FROM [table] WHERE [column] = [value];`
+
+Removing table columns: `ALTER TABLE [table] DROP COLUMN [column];`
+
+Deleting tables: `DROP TABLE [table];`
+
+Deleting databases: `DROP DATABASE [database];`
+
+Custom column output names: `SELECT [column] AS [custom-column] FROM [table];`
 
 Logout: `exit`
