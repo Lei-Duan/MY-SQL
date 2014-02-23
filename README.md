@@ -27,7 +27,7 @@ Adding a column: `ALTER TABLE [name-of-table] ADD COLUMN [name-of-column] VARCHA
 
 Adding a column with an unique, auto-incrementing ID: `ALTER TABLE [name-of-table] ADD COLUMN [name-of-column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;`
 
-Inserting a record: `INSERT INTO [name-of-table] ([name-of-column], [name-of-another-column]) VALUES ('[custom-input]', [custom-input]');`
+Inserting a record: `INSERT INTO [name-of-table] ([name-of-column], [name-of-column]) VALUES ('[custom-input]', [custom-input]');`
 
 MySQL function for datetime input: `NOW()`
 
