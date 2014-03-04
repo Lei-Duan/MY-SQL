@@ -3,6 +3,8 @@ MySQL
 
 Related tutorial: http://cd64.de/mysql-cli
 
+SQL joins infografic: http://cd64.de/sql-joins
+
 
 Commands
 -----------
