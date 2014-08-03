@@ -9,7 +9,7 @@ SQL joins infografic: http://cd64.de/sql-joins
 Commands
 -----------
 
-Access monitor: `mysql -u [username] -p` (will prompt for password)
+Access monitor: `mysql -u [username] -p;` (will prompt for password)
 
 Show all databases: `show databases;`
 
@@ -58,5 +58,7 @@ Deleting tables: `DROP TABLE [table];`
 Deleting databases: `DROP DATABASE [database];`
 
 Custom column output names: `SELECT [column] AS [custom-column] FROM [table];`
+
+Export a database dump (more info [here](http://stackoverflow.com/a/21091197/1815847)): `mysqldump -u [username] -p [database] > db_backup.sql` (will prompt for password)
 
 Logout: `exit`
