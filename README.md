@@ -51,6 +51,8 @@ Updating records: `UPDATE [table] SET [column] = '[updated-value]' WHERE [column
 
 Deleting records: `DELETE FROM [table] WHERE [column] = [value];`
 
+Delete *all records* from a table (without dropping the table itself): `DELETE FROM [table];`
+
 Removing table columns: `ALTER TABLE [table] DROP COLUMN [column];`
 
 Deleting tables: `DROP TABLE [table];`
@@ -61,4 +63,4 @@ Custom column output names: `SELECT [column] AS [custom-column] FROM [table];`
 
 Export a database dump (more info [here](http://stackoverflow.com/a/21091197/1815847)): `mysqldump -u [username] -p [database] > db_backup.sql`
 
-Logout: `exit`
+Logout: `exit;`
