@@ -1,6 +1,8 @@
 MySQL
 ===============
 
+Getting started: http://www.sqlteaching.com/
+
 Related tutorial: http://cd64.de/mysql-cli
 
 SQL joins infografic: http://cd64.de/sql-joins
