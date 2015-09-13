@@ -1,7 +1,9 @@
 MySQL
 ===============
 
-Getting started: http://www.sqlteaching.com/
+Getting started: 
+- http://www.sqlteaching.com/
+- https://www.codecademy.com/courses/learn-sql
 
 Related tutorial: http://cd64.de/mysql-cli
 
