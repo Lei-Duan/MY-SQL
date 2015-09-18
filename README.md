@@ -77,3 +77,31 @@ Export a database dump (more info [here](http://stackoverflow.com/a/21091197/181
 Import a database dump (more info [here](http://stackoverflow.com/a/21091197/1815847)): `mysql -u [username] -p -h localhost [database] < db_backup.sql`
 
 Logout: `exit;`
+
+
+Aggregate functions
+-----------
+
+Select but without duplicates: `SELECT distinct name, email, acception FROM owners WHERE acception = 1 AND date >= 2015-01-01 00:00:00`
+
+Calculate total number of records: `SELECT SUM([column]) FROM [table];`
+
+Count total number of `[column]` and group by `[category-column]`: `SELECT [category-column], SUM([column]) FROM [table] GROUP BY [category-column];`
+
+Get largest value in `[column]`: `SELECT MAX([column]) FROM [table];`
+
+Get smallest value: `SELECT MIN([column]) FROM [table];`
+
+Get average value: `SELECT AVG([column]) FROM [table];`
+
+Get rounded average value and group by `[category-column]`: `SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];`
+
+
+User functions
+-----------
+
+List all users: `select User,Host from mysql.user;`
+
+Create new user: `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
+
+Grant `ALL` access to user for `*` tables: `GRANT ALL ON database.* TO 'user'@'localhost';`
