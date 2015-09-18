@@ -55,6 +55,8 @@ Select records starting with `val` and ending with `ue`: `SELECT * FROM [table] 
 
 Select a range: `SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];`
 
+Select with custom order and only limit: `SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value];` (Order: `DESC`, `ASC`)
+
 Updating records: `UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`
 
 Deleting records: `DELETE FROM [table] WHERE [column] = [value];`
