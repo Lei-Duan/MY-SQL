@@ -45,13 +45,15 @@ Counting records: `SELECT COUNT([column]) FROM [table];`
 
 Counting and selecting grouped records: `SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`
 
-Selecting specific records: `SELECT * FROM [table] WHERE [column] = [value];` (Selectors: `<`, `>`, `!=`)
+Selecting specific records: `SELECT * FROM [table] WHERE [column] = [value];` (Selectors: `<`, `>`, `!=`; combine multiple selectors with `AND`, `OR`)
 
-Searching records for a word: `SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`
+Select records containing `[value]`: `SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`
 
-Searching records for a word starting with [value]: `SELECT * FROM [table] WHERE [column] LIKE '[value]%';`
+Select records starting with `[value]`: `SELECT * FROM [table] WHERE [column] LIKE '[value]%';`
 
-Searching for words starting with `val` and ending with `ue`: `SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`
+Select records starting with `val` and ending with `ue`: `SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`
+
+Select a range: `SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];`
 
 Updating records: `UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`
 
