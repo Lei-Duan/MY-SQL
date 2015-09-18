@@ -51,6 +51,8 @@ Searching records for a word: `SELECT * FROM [table] WHERE [column] LIKE '%[valu
 
 Searching records for a word starting with [value]: `SELECT * FROM [table] WHERE [column] LIKE '[value]%';`
 
+Searching for words starting with `val` and ending with `ue`: `SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`
+
 Updating records: `UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`
 
 Deleting records: `DELETE FROM [table] WHERE [column] = [value];`
