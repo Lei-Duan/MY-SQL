@@ -97,7 +97,7 @@ Get average value: `SELECT AVG([column]) FROM [table];`
 Get rounded average value and group by `[category-column]`: `SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];`
 
 
-User functions
+Users functions
 -----------
 
 List all users: `select User,Host from mysql.user;`
