@@ -125,4 +125,4 @@ Grant `ALL` access to user for `*` tables: `GRANT ALL ON database.* TO 'user'@'l
 
 Find out the IP Address of the Mysql Host
 -----------
-`SHOW VARIABLES WHERE Variable_name = 'hostname';` ([source](http://serverfault.com/a/129646))
+`SHOW VARIABLES WHERE Variable_name = 'hostname';` ([source](http://serverfault.com/a/129646), contribution @junrillg)
