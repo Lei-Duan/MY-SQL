@@ -39,6 +39,8 @@ MySQL function for datetime input: `NOW()`
 
 Selecting records: `SELECT * FROM [table];`
 
+Explain records: `EXPLAIN SELECT * FROM [table];`
+
 Selecting parts of records: `SELECT [column], [another-column] FROM [table];`
 
 Counting records: `SELECT COUNT([column]) FROM [table];`
