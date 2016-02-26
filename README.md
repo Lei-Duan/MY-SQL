@@ -5,9 +5,10 @@ Getting started:
 - http://www.sqlteaching.com/
 - https://www.codecademy.com/courses/learn-sql
 
-Related tutorial: http://cd64.de/mysql-cli
-
-SQL joins infografic: http://cd64.de/sql-joins
+Related tutorials:
+- MySQL-CLI: https://www.youtube.com/playlist?list=PLfdtiltiRHWEw4-kRrh1ZZy_3OcQxTn7P
+- Analyzing Business Metrics: https://www.codecademy.com/learn/sql-analyzing-business-metrics
+- SQL joins infografic: http://cd64.de/sql-joins
 
 
 Commands
