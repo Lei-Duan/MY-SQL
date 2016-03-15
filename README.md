@@ -10,6 +10,10 @@ Related tutorials:
 - Analyzing Business Metrics: https://www.codecademy.com/learn/sql-analyzing-business-metrics
 - SQL joins infografic: http://cd64.de/sql-joins
 
+Tools:
+- DataGrip: https://www.jetbrains.com/datagrip/
+- Sequel Pro: http://www.sequelpro.com/
+
 
 Commands
 -----------
