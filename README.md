@@ -28,9 +28,13 @@ Create new database: `create database [database];`
 
 Select database: `use [database];`
 
+Determine what database is in use: `select database();`
+
 Show all tables: `show tables;`
 
 Show table structure: `describe [table];`
+
+List all indexes on a table: `show index from [table];`
 
 Create new table with columns: `CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME);`
 
@@ -70,6 +74,8 @@ Deleting records: `DELETE FROM [table] WHERE [column] = [value];`
 
 Delete *all records* from a table (without dropping the table itself): `DELETE FROM [table];`
 (This also resets the incrementing counter for auto generated columns like an id column.)
+
+Delete all records in a table: `truncate table [table];`
 
 Removing table columns: `ALTER TABLE [table] DROP COLUMN [column];`
 
