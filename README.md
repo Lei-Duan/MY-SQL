@@ -6,13 +6,13 @@ Getting started:
 - https://www.codecademy.com/courses/learn-sql
 
 Related tutorials:
-- MySQL-CLI: https://www.youtube.com/playlist?list=PLfdtiltiRHWEw4-kRrh1ZZy_3OcQxTn7P
-- Analyzing Business Metrics: https://www.codecademy.com/learn/sql-analyzing-business-metrics
-- SQL joins infografic: http://cd64.de/sql-joins
+- [MySQL-CLI](https://www.youtube.com/playlist?list=PLfdtiltiRHWEw4-kRrh1ZZy_3OcQxTn7P)
+- [Analyzing Business Metrics](https://www.codecademy.com/learn/sql-analyzing-business-metrics)
+- [SQL joins infografic](https://lh4.googleusercontent.com/-RdjzcoAwBYg/UxTXWGJHgoI/AAAAAAAACrs/Gqbu6zyksgo/w852-h670/sql-joins.jpg)
 
 Tools:
-- DataGrip: https://www.jetbrains.com/datagrip/
-- Sequel Pro: http://www.sequelpro.com/
+- [DataGrip](https://www.jetbrains.com/datagrip/)
+- [Sequel Pro](http://www.sequelpro.com/)
 
 
 Commands
